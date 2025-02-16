@@ -10,10 +10,8 @@ const sections = [
   { icon: <FaCodeBranch size="28" />, text: "Projects", page: "projects" },
   { icon: <FaLightbulb size="28" />, text: "Learning", page: "learning" },
   { icon: <FaListAlt size="28" />, text: "Skillsets", page: "skillsets" },
-  { icon: <FaTasks size="28" />, text: "To-Do List", page: "todo" },
   { icon: <BsFillLightningFill size="28" />, text: "Inspiration", page: "inspiration", },
-  { icon: <GoRead size="28" />, text: "Contact", page: "contact" },
-  { icon: <TfiAgenda size="28" />, text: "Cheatsheet", page: "cheatsheet" },
+  { icon: <FaTasks size="28" />, text: "To-Do List", page: "todo" }
 ];
 
 const SideBar = () => {
@@ -21,24 +19,37 @@ const SideBar = () => {
   
     return (
       <div className="fixed top-0 left-0 w-20 h-screen flex flex-col items-center bg-gray-900 text-white shadow-lg pt-4 z-50">
-        <div className="flex-1 flex flex-col items-center space-y-4">
-          {sections.map((section) => (
-            <SideBarIcon
-              key={section.text}
-              icon={section.icon}
-              text={section.text}
-              onClick={() => navigate(`/${section.page}`)}
-            />
-          ))}
-        </div>
-  
-        <div className="mb-4">
-          <SideBarIcon
-            icon={<FaGithub size="28" />}
-            text="GitHub"
-            onClick={() => window.open("https://github.com/koen-smit", "_blank")}
-          />
-        </div>
+      <div className="flex-1 flex flex-col items-center space-y-4">
+        {sections.map((section) => (
+        <SideBarIcon
+          key={section.text}
+          icon={section.icon}
+          text={section.text}
+          onClick={() => navigate(`/${section.page}`)}
+        />
+        ))}
+      </div>
+      <div className="mb-4">
+        <SideBarIcon
+        icon={<TfiAgenda size="28" />}
+        text="Cheatsheet"
+        onClick={() => navigate("/cheatsheet")}
+        />
+      </div>
+      <div className="mb-4">
+        <SideBarIcon
+        icon={<GoRead size="28" />}
+        text="Contact"
+        onClick={() => navigate("/contact")}
+        />
+      </div>
+      <div className="mb-4">
+        <SideBarIcon
+        icon={<FaGithub size="28" />}
+        text="GitHub"
+        onClick={() => window.open("https://github.com/koen-smit", "_blank")}
+        />
+      </div>
       </div>
     );
   };

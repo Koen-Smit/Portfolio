@@ -20,6 +20,9 @@ const PageRenderer = ({ selectedPage }) => {
     case "profile":
       PageComponent = Profile;
       break;
+    case "Portfolio":
+        PageComponent = Profile;
+        break;
     case "projects":
       PageComponent = Projects;
       break;

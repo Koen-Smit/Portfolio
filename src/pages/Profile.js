@@ -1,4 +1,6 @@
 import { FaGithub, FaEnvelope, FaCodeBranch, FaTasks } from "react-icons/fa";
+import { GoPersonFill } from "react-icons/go";
+
 import FooterBanner from "./../assets/banner-sasuke.gif";
 
 const Profile = () => {
@@ -6,10 +8,10 @@ const Profile = () => {
     <div className="flex flex-col items-center justify-start text-white bg-gray-700 p-6">
       <div className="text-center">
         <h1 className="text-5xl font-bold flex items-center text-green-500">
-          Hi, I'm Koen
+          Profile <GoPersonFill size={40} className="ml-2" />
         </h1>
         <h3 className="text-xl mt-2 text-gray-400">
-          Student Software Developer
+            Koen Smit, Programmer
         </h3>
       </div>
 
