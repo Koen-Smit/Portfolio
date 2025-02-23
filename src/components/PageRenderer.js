@@ -1,10 +1,8 @@
 import { motion } from "framer-motion";
 import Profile from "../pages/Profile";
 import Projects from "../pages/Projects";
-import Learning from "../pages/Learning";
 import Skillsets from "../pages/Skillsets";
 import Todo from "../pages/Todo";
-import Inspiration from "../pages/Inspiration";
 import Contact from "../pages/Contact";
 import Cheatsheet from "../pages/Cheatsheet";
 
@@ -26,17 +24,11 @@ const PageRenderer = ({ selectedPage }) => {
     case "projects":
       PageComponent = Projects;
       break;
-    case "learning":
-      PageComponent = Learning;
-      break;
     case "skillsets":
       PageComponent = Skillsets;
       break;
     case "todo":
       PageComponent = Todo;
-      break;
-    case "inspiration":
-      PageComponent = Inspiration;
       break;
     case "contact":
       PageComponent = Contact;

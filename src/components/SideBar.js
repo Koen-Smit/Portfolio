@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { BsFillLightningFill } from "react-icons/bs";
-import { FaCodeBranch, FaListAlt, FaLightbulb, FaTasks, FaGithub, } from "react-icons/fa";
+import { FaCodeBranch, FaListAlt, FaTasks, FaGithub, } from "react-icons/fa";
 import { GoPersonFill, GoRead } from "react-icons/go";
 import { motion } from "framer-motion";
 import { TfiAgenda } from "react-icons/tfi";
@@ -8,9 +7,7 @@ import { TfiAgenda } from "react-icons/tfi";
 const sections = [
   { icon: <GoPersonFill size="28" />, text: "Profile", page: "profile" },
   { icon: <FaCodeBranch size="28" />, text: "Projects", page: "projects" },
-  { icon: <FaLightbulb size="28" />, text: "Learning", page: "learning" },
   { icon: <FaListAlt size="28" />, text: "Skillsets", page: "skillsets" },
-  { icon: <BsFillLightningFill size="28" />, text: "Inspiration", page: "inspiration", },
   { icon: <FaTasks size="28" />, text: "To-Do List", page: "todo" }
 ];
 
