@@ -24,6 +24,35 @@ const projectsData = [
   {
     title: "HBO Projecten",
     projects: [
+      
+      {
+        name: "ATIx1.3_2D-Graphics-Secure-Communication",
+        shortDescription: "Graphics & Secure Communication",
+        longDescription: "Dit project is het derde project van mijn opleiding Informatica. De opdracht was: een eigen API ontwikkelen waarmee we data veilig kunnen ophalen, bewerken en opslaan. Vervolgens wordt de API in de cloud geplaatst en gebruikt in een Unity front-end waar we een soort decoratie game hebben gemaakt.",
+        repo: "https://github.com/Koen-Smit/ATIx1.3_2D-Graphics-Secure-Communication-LU2",
+        technologies: [
+          <div key="csharp" data-tooltip-id="csharp-tooltip">
+            <CsharpLine size={24} className="text-blue-500" />
+            <Tooltip id="csharp-tooltip" place="top" content="C#" />
+          </div>,
+          <div key="unity" data-tooltip-id="unity-tooltip">
+            <FaCodeBranch size={24} className="text-yellow-500" />
+            <Tooltip id="unity-tooltip" place="top" content="Unity" />
+          </div>,
+          <div key="azure" data-tooltip-id="azure-tooltip">
+            <FaCodeBranch size={24} className="text-blue-500" />
+            <Tooltip id="azure-tooltip" place="top" content="Azure" />
+          </div>,
+          <div key="azure-sql" data-tooltip-id="azure-sql-tooltip">
+            <FaCodeBranch size={24} className="text-blue-500" />
+            <Tooltip id="azure-sql-tooltip" place="top" content="Azure SQL" />
+          </div>,
+          <div key="postman" data-tooltip-id="postman-tooltip">
+            <FaCodeBranch size={24} className="text-blue-500" />
+            <Tooltip id="postman-tooltip" place="top" content="Postman" />
+          </div>
+        ],
+      },
       {
         name: "ATIx1.2_Robotics-Prototyping",
         shortDescription: "Robotics Prototyping",

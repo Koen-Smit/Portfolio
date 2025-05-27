@@ -1,8 +1,6 @@
 import { FaGithub, FaEnvelope, FaCodeBranch, FaTasks } from "react-icons/fa";
 import { GoPersonFill } from "react-icons/go";
 
-import FooterBanner from "./../assets/banner-sasuke.gif";
-
 const Profile = () => {
   return (
     <div className="flex flex-col items-center justify-start text-white  p-6">
@@ -44,15 +42,6 @@ const Profile = () => {
           />
         </a>
       </div>
-
-        {/* Footer Banner */}
-        <div className="mt-12 mb-12">
-          <img
-            src={FooterBanner} // Vervang met je eigen bannerafbeelding
-            alt="Footer Banner"
-            className="w-full max-w-3xl rounded-lg shadow-lg mb-12"
-          />
-        </div>
       </div>
   );
 };

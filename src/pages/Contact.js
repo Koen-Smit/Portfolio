@@ -11,7 +11,7 @@ const Contact = () => {
         {
           title: "E-mail:",
           textItems: [
-            "support@example.com",
+            "Test@Test.com",
           ],
         },
         {
@@ -27,19 +27,7 @@ const Contact = () => {
           ],
         }
       ],
-    },
-    {
-      title: "Social Media",
-      lists: [
-        {
-          title: "Platforms",
-          textItems: [
-            "LinkedIn: /company/example",
-            "Instagram: @example_official",
-          ],
-        },
-      ],
-    },
+    }
   ];
 
   return (
