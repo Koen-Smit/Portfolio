@@ -10,7 +10,7 @@ const Profile = () => {
           Profile <GoPersonFill size={40} className="ml-2" />
         </h1>
         <h3 className="text-xl mt-2 text-gray-400">Koen Smit, student-Programmeur</h3>
-        <p className="mt-2 text-gray-400 max-w-2xl mx-auto">
+        <p className="mt-2 text-gray-400 max-w-2xl mx-auto mb-96">
         Ik studeer momenteel Informatica aan de Hogeschool Avans in Breda. Voorafgaand aan deze studie heb ik een versnelde mbo-opleiding in Software Development afgerond. In mijn vrije tijd ben ik vaak bezig met programmeren, iets wat ik al voor mijn opleidingen deed en nog steeds met veel plezier doe. Daarnaast heb ik werkervaring opgedaan tijdens stages op het MBO, ik hoop door mijn huidige opleiding nog meer ervaring en kennis op te doen. 
         </p>
       </div>
@@ -24,7 +24,7 @@ const Profile = () => {
       </div> */}
 
       {/* Social Media Links */}
-      <div className="flex space-x-4 mt-6">
+      <div className="flex space-x-4 mt-6  mb-96">
         <a
           href="https://github.com/Koen-Smit"
           target="_blank"
